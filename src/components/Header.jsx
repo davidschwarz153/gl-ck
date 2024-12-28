@@ -10,9 +10,7 @@ const Header = () => {
   // Navigation links data
   const navLinks = [
     { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "services", label: "Services" },
-    { id: "blog", label: "Blog" },
+    { id: "about", label: "It's all bout lorem" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -21,14 +19,18 @@ const Header = () => {
   const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
 
   return (
-    <header className="bg-gradient-to-r from-purple-100 to-pink-100 shadow-lg">
+    <header className="">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Logo setActiveLink={setActiveLink} />
 
           {/* Desktop Navigation */}
-          <DesktopNav navLinks={navLinks} activeLink={activeLink} setActiveLink={setActiveLink} />
+          <DesktopNav
+            navLinks={navLinks}
+            activeLink={activeLink}
+            setActiveLink={setActiveLink}
+          />
 
           {/* Desktop Actions */}
           <DesktopActions toggleSearch={toggleSearch} />
@@ -104,7 +106,11 @@ const MobileMenuButton = ({ isMenuOpen, toggleMenu }) => (
       onClick={toggleMenu}
       className="text-gray-600 hover:text-purple-600 transition-colors duration-200"
     >
-      {isMenuOpen ? <FaTimes className="h-6 w-6" /> : <FaBars className="h-6 w-6" />}
+      {isMenuOpen ? (
+        <FaTimes className="h-6 w-6" />
+      ) : (
+        <FaBars className="h-6 w-6" />
+      )}
     </button>
   </div>
 );

@@ -7,10 +7,10 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 bg-gradient-to-br from-purple-100 to-pink-100"
+      className="py-20 "
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-purple-800 mb-12">
+        <h2 className="text-4xl font-bold text-center mb-12">
           Über uns
         </h2>
         <div className="relative overflow-hidden rounded-lg shadow-xl">
@@ -22,10 +22,10 @@ const About = () => {
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
             <div className="text-center">
               <h3 className="text-3xl font-semibold text-white mb-4">
-                Die Schlüssel ins Glück
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi.
               </h3>
               <p className="text-xl text-white max-w-lg mx-auto">
-                Verstehe das Leben und du wirst es lieben, versprochen
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore autem odio. Deleniti sint unde voluptatibus quod adipisci est numquam?
               </p>
             </div>
           </div>
@@ -38,8 +38,8 @@ const About = () => {
               Unsere Mission
             </h4>
             <p className="text-gray-600">
-              Wir möchten Menschen dabei helfen, ihr volles Potenzial zu
-              entfalten und ein erfülltes und glückliches Leben zu führen.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam magni qui ducimus quae enim quia obcaecati sequi, non nisi soluta asperiores. Doloribus placeat assumenda, rerum distinctio ipsum quod at!
+
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -47,8 +47,7 @@ const About = () => {
               Unsere Werte
             </h4>
             <p className="text-gray-600">
-              Authentizität, Mitgefühl und kontinuierliches Wachstum stehen im
-              Mittelpunkt unserer Arbeit.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque excepturi recusandae adipisci necessitatibus modi unde. Itaque dolorum provident, fugit, nemo facilis nam accusamus temporibus in, unde quaerat cupiditate quibusdam amet voluptate porro nesciunt! Quia ipsam soluta sequi consequuntur consectetur, veritatis iste nulla quam repellendus magnam neque provident amet nobis. Aspernatur!
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -56,8 +55,7 @@ const About = () => {
               Unser Ansatz
             </h4>
             <p className="text-gray-600">
-              Wir kombinieren bewährte Methoden, ohne innovative Techniken, um
-              maßgeschneidertes Bewusstsein zu erlangen.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, magnam.
             </p>
           </div>
         </div>

@@ -6,7 +6,7 @@ import Footer from "./components/Footer"; // Import the About component
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gradient-to-r from-emerald-500 to-emerald-900">
       <ErrorBoundary>
         <Header />
         <About />
