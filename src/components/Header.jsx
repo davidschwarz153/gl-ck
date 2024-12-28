@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 
-import backgroundImage from "../assets/images/bck.jpeg";
-
 const Header = () => {
   // State hooks for managing component state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,11 +28,7 @@ const Header = () => {
           <Logo setActiveLink={setActiveLink} />
 
           {/* Desktop Navigation */}
-          <DesktopNav
-            navLinks={navLinks}
-            activeLink={activeLink}
-            setActiveLink={setActiveLink}
-          />
+          <DesktopNav navLinks={navLinks} activeLink={activeLink} setActiveLink={setActiveLink} />
 
           {/* Desktop Actions */}
           <DesktopActions toggleSearch={toggleSearch} />
@@ -65,8 +59,8 @@ const Logo = ({ setActiveLink }) => (
   <div className="flex-shrink-0">
     <img
       className="h-12 w-auto cursor-pointer"
-      src={backgroundImage}
-      alt="Logo"
+      src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80"
+      alt="Spiritual Logo"
       onClick={() => setActiveLink("home")}
     />
   </div>
@@ -110,11 +104,7 @@ const MobileMenuButton = ({ isMenuOpen, toggleMenu }) => (
       onClick={toggleMenu}
       className="text-gray-600 hover:text-purple-600 transition-colors duration-200"
     >
-      {isMenuOpen ? (
-        <FaTimes className="h-6 w-6" />
-      ) : (
-        <FaBars className="h-6 w-6" />
-      )}
+      {isMenuOpen ? <FaTimes className="h-6 w-6" /> : <FaBars className="h-6 w-6" />}
     </button>
   </div>
 );

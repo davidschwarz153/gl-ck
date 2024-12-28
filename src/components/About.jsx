@@ -1,6 +1,7 @@
 import React from "react";
-import BitcoinDonateButton from "./BitcoinDonateButton";
 import backgroundImage from "../assets/images/bck.jpeg";
+import PayPalDonateButton from "./PaypalDonatButton";
+import BitcoinDonateButton from "./BitcoinDonateButton";
 
 const About = () => {
   return (
@@ -70,7 +71,10 @@ const About = () => {
             Dieses Projekt ist und bleibt kostenfrei zugänglich. Wenn du unsere
             Arbeit wertvoll findest, freuen wir uns über deine Unterstützung.
           </p>
-          <BitcoinDonateButton />
+          <div className="flex justify-center center gap-6">
+            <PayPalDonateButton />
+            <BitcoinDonateButton />
+          </div>
         </div>
       </div>
     </section>
