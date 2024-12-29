@@ -1,5 +1,4 @@
 import React from "react";
-import backgroundImage from "../assets/images/bck.jpeg";
 import PayPalDonateButton from "./PaypalDonatButton";
 import BitcoinDonateButton from "./BitcoinDonateButton";
 
@@ -14,11 +13,7 @@ const About = () => {
           Über uns
         </h2>
         <div className="relative overflow-hidden rounded-lg shadow-xl">
-          <img
-            src={backgroundImage}
-            alt="Logo"
-            className="w-full h-96 object-cover"
-          />
+    
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
             <div className="text-center">
               <h3 className="text-3xl font-semibold text-white mb-4">
